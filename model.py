@@ -45,9 +45,9 @@ if choice == 'IRIS':
     st.title('The FAMOUS IRIS DATASET')
     st.write('This is just a deployment of prediction on IRIS DATASET as **Practice**')
     sl = st.slider('Sepal Length in cm',min_value=0.0,max_value=10.0,step = 0.1,key='sl1')  
-    sw = st.slider('Sepal Length in cm',min_value=0.0,max_value=10.0,step = 0.1,key='sw1')  
-    pl = st.slider('Sepal Length in cm',min_value=0.0,max_value=10.0,step = 0.1,key='pl1')  
-    pw = st.slider('Sepal Length in cm',min_value=0.0,max_value=10.0,step = 0.1,key='pw1')  
+    sw = st.slider('Sepal Width in cm',min_value=0.0,max_value=10.0,step = 0.1,key='sw1')  
+    pl = st.slider('Petal Length in cm',min_value=0.0,max_value=10.0,step = 0.1,key='pl1')  
+    pw = st.slider('Petal Width in cm',min_value=0.0,max_value=10.0,step = 0.1,key='pw1')  
     
     
     click_predict = st.button('Predict')
