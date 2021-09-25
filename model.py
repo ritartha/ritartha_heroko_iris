@@ -37,9 +37,9 @@ che = '''
 Flower = {'setosa':'Iris Setosa','versicolor':'Iris Versicolor','virginica':'Iris Verginica'}
 
 import streamlit as st
-select = ['IRIS','ABOUT']
+select = ['IRIS','NEW PROJECT','ABOUT']
 
-choice = st.sidebar.radio("GO TO",('IRIS','ABOUT'))
+choice = st.sidebar.radio("GO TO",('IRIS','NEW PROJECT','ABOUT'))
 
 if choice == 'IRIS':
     st.title('The FAMOUS IRIS DATASET')
@@ -66,7 +66,20 @@ if choice == 'IRIS':
         if pred =='virginica':            
             virg = Image.open('virginica.jpg','r')
             st.image(virg)
-            
+if choice == 'NEW PROJECT': 
+    st.title('*Ventilator Pressure Prediction*')
+    TEMP = '''
+    
+░█████╗░░█████╗░███╗░░░███╗██╗███╗░░██╗░██████╗░  ░██████╗░█████╗░░█████╗░███╗░░██╗
+██╔══██╗██╔══██╗████╗░████║██║████╗░██║██╔════╝░  ██╔════╝██╔══██╗██╔══██╗████╗░██║
+██║░░╚═╝██║░░██║██╔████╔██║██║██╔██╗██║██║░░██╗░  ╚█████╗░██║░░██║██║░░██║██╔██╗██║
+██║░░██╗██║░░██║██║╚██╔╝██║██║██║╚████║██║░░╚██╗  ░╚═══██╗██║░░██║██║░░██║██║╚████║
+╚█████╔╝╚█████╔╝██║░╚═╝░██║██║██║░╚███║╚██████╔╝  ██████╔╝╚█████╔╝╚█████╔╝██║░╚███║
+░╚════╝░░╚════╝░╚═╝░░░░░╚═╝╚═╝╚═╝░░╚══╝░╚═════╝░  ╚═════╝░░╚════╝░░╚════╝░╚═╝░░╚══╝
+    '''
+    st.write(TEMP)
+    
+    
 if choice == 'ABOUT': 
     F = open('about.txt','r')
     f = F.read()
