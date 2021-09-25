@@ -67,8 +67,8 @@ if choice == 'IRIS':
             virg = Image.open('virginica.jpg','r')
             st.image(virg)
 if choice == 'NEW PROJECT': 
-    st.title('*Ventilator Pressure Prediction*')
-    TEMP = 'COMING SOON'
+    st.title('**Ventilator Pressure Prediction**\n\n')
+    TEMP = '\n\nCOMING SOON'
     st.write(TEMP)
     
     
